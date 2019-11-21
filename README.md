@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+```python
+N = 4
+array = [ [ 0 for _ in range(N) ] for _ in range(N) ]
+k=0
+for i in range( N ) :
+    for j in range( N ) :
+        k+=1
+        array[i][j] = k        
+temp = [ [ 0 for _ in range(N) ] for _ in range(N) ]                                                                                                                                                                                                                                                                                                                                                     
 
-You can use the [editor on GitHub](https://github.com/zionhan/TIL/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+for i in range( N ) :
+    for j in range( N ) :
+        if( i in (1,2) and j in (1,2) ) :
+            if( j>=i and j<(N-1-i) ) :
+                temp[i][j+1] = array[i][j]
+            elif( j>i ) :
+                temp[i+1][j] = array[i][j]
+            elif( i>=j and j>(N-1-i) ) :
+                temp[i][j-1] = array[i][j]
+            elif( i>j ) :
+                temp[i-1][j] = array[i][j] 
+            else :
+                temp[i][j] = array[i][j]
+        else :
+            if( j>=i and i>(N-1-j) ) :
+                temp[i-1][j] = array[i][j]
+            elif( j>i ) :
+                temp[i][j-1] = array[i][j]
+            elif( i>=j and i<(N-1-j) ) :
+                temp[i+1][j] = array[i][j]
+            elif( i>j ) :
+                temp[i][j+1] = array[i][j]                
+                
+for i in range( N ) :
+    for j in range( N ) :
+        print( array[i][j], end="\t" )
+    print()
+            
+print()
+for i in range( N ) :
+    for j in range( N ) :
+        print( temp[i][j], end="\t" )
+    print()
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zionhan/TIL/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
