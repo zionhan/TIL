@@ -39,7 +39,8 @@ BEGIN
 						END CASE;
 					END WHILE;
 				WHEN( is_recurring = "N" ) THEN 
-					SELECT id, event_title, event_description, start_date, end_date, start_time, end_time, is_full_day_even
+					SELECT id, event_title, event_description,
+                    start_date, end_date, start_time, end_time, is_full_day_even
 					FROM event LEFT JOIN recurring_pattern
 					ON event.parent_pattern_id = recurring_pattern.pattern_id
 					WHERE start_date >= start AND start_date <= end;
