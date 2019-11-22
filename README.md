@@ -1,56 +1,52 @@
-```python
-import heapq as hq
+```mysql
+DROP PROCEDURE IF EXISTS cursorProc;
+DELIMITER $$
+CREATE PROCEDURE cursorProc( 
+	IN start DATE,
+	IN end DATE
+)
+BEGIN	
+	DECLARE start_date DATE;
+	DECLARE is_recurring CHAR(1);
+	DECLARE recurring_type CHAR(10);
+	DECLARE separation_count INT(3);
 
-text = """낮음, 1, A.로그인 화면 오타 수정
+	DECLARE endOfRow BOOLEAN DEFAULT FALSE;
+	
+	DECLARE userCursor CURSOR FOR
+		SELECT start_date, is_recurring, recurring_type, separation_count 
+		FROM event LEFT JOIN recurring_pattern 
+		ON event.parent_pattern_id = recurring_pattern.pattern_id
+		WHERE start_date >= start AND start_date <= end;
+	DECLARE CONTINUE HANDLER 
+		FOR NOT FOUND SET endOfRow = TRUE;
+	OPEN userCursor;
 
-긴급, 3, B.OTP 사용자 로그인 안됨
-
-보통, 1, C.권한 안내 문구 수정
-
-낮음, 2, D.로딩중 표시 아이콘 변경
-
-긴급, 3, E.메일의 본문이 표시되지 않는 문제
-
-보통, 1, F.첨부파일 사이즈 표시 오류 수정
-
-긴급, 2, G.메일 전송시 첨부파일 누락됨
-
-보통, 3, H.1:1 문의 기능 구현
-
-낮음, 1, I.제품 로고 변경
-
-보통, 3, J.안읽음 카운트 오류 문제 
-
-낮음, 1, K.폰트 색상 변경 
-
-긴급, 2, L.전체 메일함 동기화 안되는 문제 """
-
-bug_list = []
-first_bug_list = []     # "긴급" 버그 리스트
-second_bug_list = []    # "보통" 버그 리스트
-third_bug_list = []     # "낮음" 버그 리스트
-
-def viewList( bug_list ) :
-    while( bug_list ) :
-        bug = hq.heappop( bug_list )[1]
-        print( "{},{},{}".format( bug[0], bug[1], bug[2] ) )
-    print() 
-  
-for line in text.split( "\n" ) :
-    if( line != "" ) :        
-        bug_list.append( line.split(",") )
-   
-for bug in bug_list :    
-    priority = bug[0]    
-    sortBy = str( bug[1] ) + bug[2][0]            
-    if( priority == "긴급" ) :
-        hq.heappush( first_bug_list, (sortBy, bug) )
-    elif( priority == "보통" ) :
-        hq.heappush( second_bug_list, (sortBy, bug) )
-    elif( priority == "낮음" ) :
-        hq.heappush( third_bug_list, (sortBy, bug) )   
-
-viewList( first_bug_list )
-viewList( second_bug_list )
-viewList( third_bug_list )
+	cursor_loop: LOOP
+		FETCH userCursor INTO start_date, is_recurring, recurring_type, separation_count;	
+		
+		IF endOfRow THEN
+			LEAVE cursor_loop;
+		ELSE
+			CASE
+				WHEN( is_recurring = "Y" ) THEN
+					WHILE( start_date <= start ) DO
+						CASE
+							WHEN( recurring_type = "daily" ) THEN
+								SET start_date = ADDDATE( start_date, INTERVAL 7 DAY );
+							WHEN( recurring_type = "monthly" ) THEN
+								SET start_date = ADDDATE( start_date, INTERVAL 1 MONTH );
+						END CASE;
+					END WHILE;
+				WHEN( is_recurring = "N" ) THEN 
+					SELECT id, event_title, event_description, start_date, end_date, start_time, end_time, is_full_day_even
+					FROM event LEFT JOIN recurring_pattern
+					ON event.parent_pattern_id = recurring_pattern.pattern_id
+					WHERE start_date >= start AND start_date <= end;
+			END CASE;
+		END IF;
+	END LOOP cursor_loop;	
+	CLOSE userCursor;
+END $$
+DELIMITER;
 ```
