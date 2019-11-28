@@ -16,6 +16,11 @@
  {% endif %}
 ```
 
+```python
+class Meta:
+  ordering = ['created_datetime']
+```
+
 ### 3. models.py 수정
 - 댓글 삭제시 연관 재댓글들 모두 삭제되게 함( *인스타그램 참고* )
 ```python
