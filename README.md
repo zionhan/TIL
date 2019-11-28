@@ -1,12 +1,12 @@
-### 1. base.css 수정 
-- 단순한 해결 : *재댓글의 재댓글* 부터는 **padding-left : 0rem** 으로 하여 *댓글의 재댓글* 과 간격을 동일하게 함
+### 1. base.css 수정 ( 단순한 해결 )
+- *재댓글의 재댓글* 부터는 **padding-left : 0rem** 으로 하여 *댓글의 재댓글* 과 간격을 동일하게 함
 ```css
 .gb-padding-left_x-large > .gb-padding-left_x-large {
   padding-left: 0rem;
 }
 ```
 
-### 2. _comment.html 수정
+### 2. _comment.html 수정 ( 인스타그램을 참고하여 댓글 목록 구현 )
 - 재댓글들의 ""comment_id""를 댓글의 ""comment.pk""를 향하게 하여 인스타그램과 동일한 정렬이 가능하게했다.
 - 추가로 **Comment** 를 **created_datetime** 값으로 정렬하여 오름차순으로 댓글들이 정렬되게 했다( *인스타그램 참고* )
 ```html
