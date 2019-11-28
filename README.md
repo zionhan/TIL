@@ -7,7 +7,7 @@
 ```
 
 ### 2. _comment.html 수정
-- 재댓글들의 comment_id를 댓글의 comment.pk를 향하게 하여 인스타그램과 동일한 정렬이 가능하게했다.
+- 재댓글들의 ""comment_id""를 댓글의 ""comment.pk""를 향하게 하여 인스타그램과 동일한 정렬이 가능하게했다.
 - 추가로 **Comment** 를 **created_datetime** 값으로 정렬하여 오름차순으로 댓글들이 정렬되게 했다( *인스타그램 참고* )
 ```html
  {% if comment.comment %}
