@@ -1,0 +1,16 @@
+package array;
+/*
+ * Array 논리적위치와 물리적 위치가 같다  => ArrayList 단점 보완.
+ * Linked List 는 다르다. 연장이 좋다.
+ */
+
+public class arrayEx {	
+	
+	public static void main( String[] args ) {
+		int0[] arr = new int[] { 1, 2, 3 };
+		
+		System.out.println( arr );
+		
+	}
+	
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="classpart.Student"/>
+    <fullyQualifiedTypeName name="classpart.ManInfo"/>
+    <fullyQualifiedTypeName name="reference.Student"/>
+    <fullyQualifiedTypeName name="cooperation.Taxi"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="inheri.VipCustomer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="templateEx.AICar"/>
+    <fullyQualifiedTypeName name="templateEx.ManualCar"/>
+    <fullyQualifiedTypeName name="gameEx.PlayerLevel"/>
+    <fullyQualifiedTypeName name="gameEx.Advanced"/>
+    <fullyQualifiedTypeName name="gameEx.Super"/>
+    <fullyQualifiedTypeName name="interfaceEx.CompleteCalc"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="scheduler.Scheduler"/>
+    <fullyQualifiedTypeName name="scheduler.RoundRobin"/>
+    <fullyQualifiedTypeName name="scheduler.LeastJob"/>
+    <fullyQualifiedTypeName name="scheduler.Priority"/>
+    <fullyQualifiedTypeName name="multi.Customer"/>
+    <fullyQualifiedTypeName name="multiInheritInterface.MyInterface"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="hw.BubbleSort"/>
+    <fullyQualifiedTypeName name="hw.HeapSort"/>
+    <fullyQualifiedTypeName name="hw.QuickSort"/>
+</qualifiedTypeNameHistroy>

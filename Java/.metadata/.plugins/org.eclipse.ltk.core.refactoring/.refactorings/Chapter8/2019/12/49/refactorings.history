@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;template.md&apos; to &apos;abstractEx&apos;" description="Move &apos;template.md&apos; to &apos;abstractEx&apos;" destination="src/abstractEx" element1="src/templateEx/template.md" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1575380836261" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;template.md&apos; to &apos;templateEx&apos;" description="Move &apos;template.md&apos; to &apos;templateEx&apos;" destination="src/templateEx" element1="src/abstractEx/template.md" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1575380874506" updateReferences="true"/>
+</session>

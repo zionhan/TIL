@@ -1,0 +1,6 @@
+package abstractEx;
+
+public abstract class Computer {
+
+}
+"안녕하세요"

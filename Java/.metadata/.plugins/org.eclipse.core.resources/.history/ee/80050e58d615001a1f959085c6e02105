@@ -1,0 +1,17 @@
+package gameEx;
+
+public abstract class Player {
+	public abstract void run();
+	
+	public abstract void jump();
+	public abstract void turn();
+	
+	public void go() {
+		run();
+		jump();
+		turn();
+	}
+	
+	
+
+}

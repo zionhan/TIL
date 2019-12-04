@@ -1,0 +1,6 @@
+package gameEx;
+
+public class Player {
+	PlayerLevel level;
+
+}
