@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="cooperation.Taxi"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="inheri.VipCustomer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="templateEx.AICar"/>
     <fullyQualifiedTypeName name="templateEx.ManualCar"/>
     <fullyQualifiedTypeName name="gameEx.PlayerLevel"/>
@@ -25,4 +24,5 @@
     <fullyQualifiedTypeName name="hw.BubbleSort"/>
     <fullyQualifiedTypeName name="hw.HeapSort"/>
     <fullyQualifiedTypeName name="hw.QuickSort"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

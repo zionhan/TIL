@@ -26,3 +26,13 @@
 # | 인터페이스 상속
 	인터페이스 간에도 상속이 가능함
 	구현이 없으므로 extends  뒤에 여러 인터페이스를 상속받을 수 있음
+
+
+# | Strategy Pattern
+
+					Sorting
+						|
+	Bubble Sort	QuickSort		HeapSort
+	
+	인터페이스를 활용하면 다양한 정책이나 알고리즘을 
+	프로그램의 큰 수정 없이 적용, 확장할 수 있음
