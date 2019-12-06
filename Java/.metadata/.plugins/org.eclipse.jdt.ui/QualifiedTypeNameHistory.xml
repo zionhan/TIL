@@ -20,9 +20,20 @@
     <fullyQualifiedTypeName name="multi.Customer"/>
     <fullyQualifiedTypeName name="multiInheritInterface.MyInterface"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="hw.BubbleSort"/>
     <fullyQualifiedTypeName name="hw.HeapSort"/>
     <fullyQualifiedTypeName name="hw.QuickSort"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="generic.GenericPrinter"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="collection.MyStack"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="set.Member"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="hashmap.MemberHashMap"/>
 </qualifiedTypeNameHistroy>
