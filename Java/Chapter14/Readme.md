@@ -15,10 +15,11 @@
  - 입력 스트림 : 대상으로 부터 자료를 읽어 들이는 스트림( 자바 응용 프로그램 <- 입출력 자료 )
  - 출력 스트림 : 대상으로 자료를 출력하는 스트림 ( 자바 응용 프로그램 -> 입출력 자료 )
  - 스트림의 예
- 	| 종류 | 예시 |
- 	| ---| --- |
- 	| 입력 스트림 | FileInputStream, FileReader, BufferedInputStream, BufferedReader 등 |
- 	| 출력 스트림 | FileOutputStream, FileWriter, BufferedOutputStream, BufferedWriter 등 |
+ 
+| 종류 | 예시 |
+| ---| --- |
+| 입력 스트림 | FileInputStream, FileReader, BufferedInputStream, BufferedReader 등 |
+| 출력 스트림 | FileOutputStream, FileWriter, BufferedOutputStream, BufferedWriter 등 |
 
 ### | 기반 스트림과 보조 스트림
  - 기반 스트림 : 대상에 직접 자료를 읽고 쓰는 기능의 스트림
@@ -30,11 +31,12 @@
  - java.util 패키지에 있는 입력 클래스
  - 문자뿐 아니라 정수, 실수 등 다양한 자료형을 읽을 수 있음
  - 생성자가 다양하여 여러 소스로 부터 자료를 읽을 수 있음
- | 생성자 | 설명 |
- | --- | --- |
- | Scanner( File source ) | 파일을 매개변수로 받아 Scanner를 생성합니다. |
- | Scanner( InputStream source ) | 바이트 스트림을 매개변수로 받아 Scanner를 생성합니다. |
- | Scanner( String source ) | String을 매개변수로 받아 Scanner를 생성합니다. |
+ 
+| 생성자 | 설명 |
+| --- | --- |
+| Scanner( File source ) | 파일을 매개변수로 받아 Scanner를 생성합니다. |
+| Scanner( InputStream source ) | 바이트 스트림을 매개변수로 받아 Scanner를 생성합니다. |
+| Scanner( String source ) | String을 매개변수로 받아 Scanner를 생성합니다. |
  
 #### | 바이트 단위 스트림
  - InputStream : 바이트 단위 입력 스트림 최상위 클래스
