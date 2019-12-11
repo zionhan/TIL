@@ -16,10 +16,17 @@
  - 출력 스트림 : 대상으로 자료를 출력하는 스트림 ( 자바 응용 프로그램 -> 입출력 자료 )
  - 스트림의 예
  
+<<<<<<< HEAD
  | 종류 | 예시 |
  | ---| --- |
  | 입력 스트림 | FileInputStream, FileReader, BufferedInputStream, BufferedReader 등 |
  | 출력 스트림 | FileOutputStream, FileWriter, BufferedOutputStream, BufferedWriter 등 |
+=======
+| 종류 | 예시 |
+| ---| --- |
+| 입력 스트림 | FileInputStream, FileReader, BufferedInputStream, BufferedReader 등 |
+| 출력 스트림 | FileOutputStream, FileWriter, BufferedOutputStream, BufferedWriter 등 |
+>>>>>>> 31734cdcd8b325a20f95c5a9775130f28615f366
 
 ### | 기반 스트림과 보조 스트림
  - 기반 스트림 : 대상에 직접 자료를 읽고 쓰는 기능의 스트림
@@ -31,7 +38,11 @@
  - java.util 패키지에 있는 입력 클래스
  - 문자뿐 아니라 정수, 실수 등 다양한 자료형을 읽을 수 있음
  - 생성자가 다양하여 여러 소스로 부터 자료를 읽을 수 있음
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 31734cdcd8b325a20f95c5a9775130f28615f366
 | 생성자 | 설명 |
 | --- | --- |
 | Scanner( File source ) | 파일을 매개변수로 받아 Scanner를 생성합니다. |
@@ -42,6 +53,7 @@
  - InputStream : 바이트 단위 입력 스트림 최상위 클래스
  - OutputStream : 바이트 단위 출력 스트림 최상위 클래스
 
+<<<<<<< HEAD
 
 ### | 직력화( Serialization ) 
  - 인스턴스의 상태를 그대로 저장하거나 네트윅으로 전송하고 이를 다시 복원 하는 방식
@@ -53,3 +65,6 @@
  - 실제 입출력 기능을 가진 객체( 컴포넌트 ) 와 그 외 다양한 기능을 제공하는 데코레이터 ( 보조스트림 )을 사용하여 다양한 입출력 기능을 구현
  - 상속보다 유연한 확정성을 가짐
  - 지속적인 서비스의 증가와 제거가 용이함
+=======
+ 
+>>>>>>> 31734cdcd8b325a20f95c5a9775130f28615f366
