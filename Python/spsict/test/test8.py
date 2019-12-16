@@ -1,20 +1,20 @@
-# ÄüÁ¤·Ä
+data = [ 9, 9, 102, 100, 1, 1, 3, 2, 7, 8 ]
 
 def quick_sort( data, start, end ) :    
     if( start >= end ) :
-        return    
+        return
+    
     key = start
     low = start + 1
     high = end
     temp = 0
     
-    while( low >= high ) :
+    while( low <= high ) :
         while( low <= end and data[key] >= data[low]  ):
-            low += 1        
-            
+            low += 1             
         while( high > start and data[key] <= data[high] ) :
-            high -= 1
-    
+            high -= 1    
+        
         if( low > high ) :
             temp = data[start]
             data[start] = data[high]
@@ -22,15 +22,16 @@ def quick_sort( data, start, end ) :
         else :
             temp = data[high]
             data[high] = data[low]
-            data[low] = temp
-            
-    quick_sort( data, start, high - 1 )
-    quick_sort( data, low-1, end )
+            data[low] = temp        
     
+    print( data ) 
+               
+    quick_sort( data, start, high-1 )
+    quick_sort( data, low, end )    
     return
 
-data = [ 1, 9, 4, 6, 5, 10, 3, 2, 7, 8 ]
-quick_sort(data, 0, len( data ) -1 )
+
+quick_sort(data, 0, len(data)-1 )
 
 print( data ) 
     
