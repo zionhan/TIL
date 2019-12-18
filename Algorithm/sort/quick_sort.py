@@ -1,4 +1,6 @@
 # 시간복잡도  평균 O( NlogN ) 최악의 경우 O( N^2 ) 
+import random
+
 def quick_sort( data, start, end ):
     if( start >= end ) :
         return
@@ -28,6 +30,6 @@ def quick_sort( data, start, end ):
     return
 
 
-data = [ 5, 2000, 2000, 300, 7, 100, 101, 3, 2, 5 ]     
+data = random.sample( range(100), 10 )     
 quick_sort( data, 0, len( data )-1 )
 print( data )
