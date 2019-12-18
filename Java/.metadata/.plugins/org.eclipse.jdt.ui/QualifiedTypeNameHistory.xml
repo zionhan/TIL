@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="classpart.Student"/>
-    <fullyQualifiedTypeName name="classpart.ManInfo"/>
-    <fullyQualifiedTypeName name="reference.Student"/>
-    <fullyQualifiedTypeName name="cooperation.Taxi"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="inheri.VipCustomer"/>
-    <fullyQualifiedTypeName name="templateEx.AICar"/>
-    <fullyQualifiedTypeName name="templateEx.ManualCar"/>
-    <fullyQualifiedTypeName name="gameEx.PlayerLevel"/>
-    <fullyQualifiedTypeName name="gameEx.Advanced"/>
-    <fullyQualifiedTypeName name="gameEx.Super"/>
-    <fullyQualifiedTypeName name="interfaceEx.CompleteCalc"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="scheduler.Scheduler"/>
     <fullyQualifiedTypeName name="scheduler.RoundRobin"/>
@@ -27,7 +15,6 @@
     <fullyQualifiedTypeName name="generic.GenericPrinter"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="collection.MyStack"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="set.Member"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -36,4 +23,41 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="hashmap.MemberHashMap"/>
+    <fullyQualifiedTypeName name="innerclass.OutClass.InClass"/>
+    <fullyQualifiedTypeName name="innerclass.OutClass.InStaticClass"/>
+    <fullyQualifiedTypeName name="MyRunnable"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="lambda.StringConcatImp"/>
+    <fullyQualifiedTypeName name="lambda.StringConcat"/>
+    <fullyQualifiedTypeName name="lambda.PrintString"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
+    <fullyQualifiedTypeName name="stream.CompareString"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="exception.AutoClassTest"/>
+    <fullyQualifiedTypeName name="hw.IDFormatException"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.RandomAccessFile"/>
+    <fullyQualifiedTypeName name="stream.coffee.KenyaAmericano"/>
+    <fullyQualifiedTypeName name="stream.coffee.EtiopiaAmericano"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="multithread.FastLibrary"/>
 </qualifiedTypeNameHistroy>

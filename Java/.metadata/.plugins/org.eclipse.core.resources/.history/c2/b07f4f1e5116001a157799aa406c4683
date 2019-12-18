@@ -1,6 +1,0 @@
-# | 인터페이스 요소 interface
-1. 추상 메서드(로만) 이루어져있다
-2. 상수 public static final
-3. 디폴트 메서드
-4. 정적 메서드
-5. private 메서드
