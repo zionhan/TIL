@@ -44,8 +44,8 @@ class Food {
     }
 
     print() {
-        console.log( `${this.name}을 파는 음식점들 : ` );
-        console.log( this.brands.join( ', ' ) );
+        console.log( `${this.name}을 파는 음식점들 : ${this.brands.join( ', ' )}` );
+        console.log( );
     }
 
 }

@@ -16,3 +16,7 @@ console.log( sum2 )
 
 hello( "hando" )
 
+
+
+baby = '한시온';
+console.log( `한도경의 아들은 ${baby}이다.` );

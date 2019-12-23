@@ -27,7 +27,7 @@ console.log( counts );
 
 // 10 보다 큰 숫자의 갯수를 반환하는 함수
 function countBiggerThanTen( numbers ) {
-    const biggerNumbers = numbers.filter( number => number > 10 );
+    const biggerNumbers = numbers.filter( function( number ) { if( number > 10 ) return number; } );
     return biggerNumbers.length ;
 }
 

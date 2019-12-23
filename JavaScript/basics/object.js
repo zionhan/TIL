@@ -34,6 +34,9 @@ const captainAmerica = {
 const{ name } = ironMan;
 console.log( name );
 
+const name2 = ironMan.name;
+console.log( "test : " + name2 );
+
 function print( { alias, name, actor } ) {
     // const { alias, name, actor } = hero;
     // const text = `${hero.alias}(${hero.name}) 역할을 맡은 배우는 ${hero.actor} 입니다.`;

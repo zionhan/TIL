@@ -26,4 +26,5 @@ const array2 = [
 ]
 
 array2.push( 6 );
+console.log( array2 );
 console.log( array2[1] )

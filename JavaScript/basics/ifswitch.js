@@ -10,9 +10,9 @@ if( a+1 === 2 )  {
 console.log( 'if문 밖의 a의 값은 ' + a)
 
 
-const device = 'iphone';
+const device = 'ipad';
 
-switch (device) {
+switch ( device ) {
     case 'iphone':
         console.log( "iphone" );
         break;

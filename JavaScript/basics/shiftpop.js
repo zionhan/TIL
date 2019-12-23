@@ -4,6 +4,7 @@ const value = numbers.shift();
 numbers.shift();
 numbers.shift();
 numbers.shift();
+console.log( numbers );
 numbers.unshift(50);
 numbers.unshift(40);
 console.log( value );

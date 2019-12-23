@@ -25,6 +25,8 @@ const todos = [
     }
 ]
 
+
+// find, findIndex 차이 비교.
 const index = todos.findIndex( todo => todo.id === 3 )
 console.log( index )
 

@@ -1,3 +1,5 @@
+//  for ( n of nums )   for( n in nums )  차이 알기
+
 const numbers = [ 10, 20, 30, 40, 50 ];
 
 for( let number of numbers ) {
@@ -18,3 +20,7 @@ for ( let key in doggy ) {
     console.log( `${key} : ${doggy[key]}` );
     console.log( key + ' : ' + doggy[key] );
 }
+
+// for( let key of doggy ) {
+//     console.log( key );
+// }

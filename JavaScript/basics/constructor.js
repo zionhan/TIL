@@ -18,7 +18,7 @@ Animal.prototype.say = function() {
 }
 Animal.prototype.sharedValue = 1;
 
-
+// javascript call 함수.
 function Dog( name, sound ) {
     Animal.call( this, '개', name, sound );    
 }
@@ -28,7 +28,7 @@ function Cat( name, sound ) {
 }
 
 Dog.prototype = Animal.prototype;
-Cat.prototype = Animal.prototype;
+// Cat.prototype = Animal.prototype;
 
 const dog = new Dog( '멍멍이', '멍멍' )
 const cat = new Cat( '야옹이', '야옹' )
