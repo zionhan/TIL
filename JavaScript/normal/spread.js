@@ -41,15 +41,16 @@ const result = subtract( ...numbers );
 console.log( result );
 
 function max( ...nums ) {
-    return nums.reduce( ( acc, current ) => {
-        if( acc > current ) {
-            return acc;
-        } else {
-            return current;
-        }
-    }, -1 );
+    // return nums.reduce( ( acc, current ) => {
+    //     if( acc > current ) {
+    //         return acc;
+    //     } else {
+    //         return current;
+    //     }
+    // }, -1 );
+    return nums.reduce( ( acc, current ) => ( acc>current ? acc : current ), nums[0] );
 }
-const nums = [ 1, 2, 3, 45, 5, 6, 7, 8 ];
+const nums = [ 1, 2, 3, 45, 5, 6, 7, 8, 99 ];
 
 const result2 = max( ...nums );
 console.log( result2 );

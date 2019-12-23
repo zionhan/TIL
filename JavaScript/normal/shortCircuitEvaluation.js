@@ -23,7 +23,7 @@ const name = getName()
 console.log( name );
 
 
-console.log( true && 'hello' );
+console.log( true && false );
 console.log( false && 'hello' );
 console.log( 'hello' && 'bye' );
 console.log( null && 'hello' );
@@ -53,6 +53,7 @@ function getName( animal ) {
 const name3 = getName( namelessDog );
 console.log( name3 );
 
+console.log( '요기부터' )
 console.log( false || 'hello' );
 console.log( '' || '이름없다' );
 console.log( null || '널이다~' );
